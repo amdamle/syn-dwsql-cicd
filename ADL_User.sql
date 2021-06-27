@@ -7,6 +7,6 @@ GO
 
 CREATE DATABASE SCOPED CREDENTIAL ADL_User
 WITH
-    IDENTITY = '$(CLIENT_ID@https://login.microsoftonline.com/$(TENANT_ID)/oauth2/token',
+    IDENTITY = '$(CLIENT_ID)@https://login.microsoftonline.com/$(TENANT_ID)/oauth2/token',
     SECRET = '$(APP_PASSWORD)'
 ;
